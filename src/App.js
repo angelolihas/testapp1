@@ -1,5 +1,5 @@
 import React from "react";
-
+import './App.css';
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -41,6 +41,7 @@ class App extends React.Component {
 
     render() {
         return (
+            <div class="form-container">
             <form onSubmit={this.handleSubmit}>
                 <label>
                     Firstname:
@@ -92,6 +93,7 @@ class App extends React.Component {
                 </label>
                 <input type="submit" value="Submit"/>
             </form>
+            </div>
         );
     }
 }
